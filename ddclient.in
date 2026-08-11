@@ -6439,7 +6439,7 @@ sub _netcup_login {
 sub _netcup_call {
     my ($h, $zone, $session_id, $action, $extra_params) = @_;
 
-    my $url = opt('server', $h) . "/run/webservice/servers/endpoint.php";
+    my $url = opt('server', $h) . "/run/webservice/servers/endpoint.php?JSON";
 
     my %params = (
         customernumber => opt('login', $h),
